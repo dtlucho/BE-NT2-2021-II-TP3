@@ -62,6 +62,7 @@ export default function App() {
         onPress={() => {
           clearInterval(interval);
           setRunning(false);
+          setInSession(true);
           setTime(time => session * 60)
         }}
         style={styles.Button}>
